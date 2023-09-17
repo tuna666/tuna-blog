@@ -57,12 +57,3 @@
     transform: translateY(-10px) rotate(45deg);
     transition: 0.3s ease;
 }
-.menu-enter-active, .menu-leave-active {
-    transition: opacity 0.3s;
-}
-.menu-enter-from, .menu-leave-to {
-    opacity: 0;
-}
-.menu-enter-to, .menu-leave-from {
-    opacity: 1;
-}

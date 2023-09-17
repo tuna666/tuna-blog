@@ -15,21 +15,19 @@
           <span class="line line03" v-bind:class="{'v-line03':hamburgerActive}"></span>
         </div>
       </div>
-      <transition name="menu">
-        <div :class="{'hidden': !hamburgerActive}" class="items-center justify-between w-full md:flex md:w-auto md:order-1">
-          <ul class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
-            <li>
-              <NuxtLink to="/" @click='hamburgerActive=!hamburgerActive' class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Home</NuxtLink>
-            </li>
-            <li>
-              <NuxtLink to="/school" @click='hamburgerActive=!hamburgerActive' class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">スクール比較</NuxtLink>
-            </li>
-            <li>
-              <NuxtLink to="/ex1" @click='hamburgerActive=!hamburgerActive' class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">ex1</NuxtLink>
-            </li>
-          </ul>
-        </div>
-      </transition>
+      <div :class="{'hidden': !hamburgerActive}" class="items-center justify-between w-full md:flex md:w-auto md:order-1">
+        <ul class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+          <li>
+            <NuxtLink to="/" @click='hamburgerActive=!hamburgerActive' class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Home</NuxtLink>
+          </li>
+          <li>
+            <NuxtLink to="/school" @click='hamburgerActive=!hamburgerActive' class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">スクール比較</NuxtLink>
+          </li>
+          <li>
+            <NuxtLink to="/ex1" @click='hamburgerActive=!hamburgerActive' class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">ex1</NuxtLink>
+          </li>
+        </ul>
+      </div>
     </div>
   </nav>
 </template>

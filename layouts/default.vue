@@ -1,6 +1,10 @@
 <template>
   <div>
     <NavBar />
-    <slot />
+    <div class="pt-16">
+      <slot />
+    </div>
   </div>
 </template>
+<script setup lang="ts">
+</script>

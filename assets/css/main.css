@@ -1,3 +1,68 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* 独自カラー定義 */
+.tuna-blue {
+    color: #135ca6;
+}
+.tuna-light-blue {
+    color: #d6f5f8;
+}
+.tuna-white {
+    color: #fcfbfd;
+}
+
+/* ハンバーガーメニュー */
+.hamburger {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 64px;
+    height: 64px;
+    cursor: pointer;
+    z-index: 9;
+}
+.hamburger .line {
+    position: absolute;
+    top: 0;
+    left: 16px;
+    width: 32px;
+    height: 2px;
+    background: #333333;
+    text-align: center;
+    border-radius: 3px;
+}
+.hamburger .line01 {
+    top: 22px;
+    transition: 0.3s ease;
+}
+.hamburger .line02 {
+    top: 32px;
+    transition: 0.3s ease;
+}
+.hamburger .line03 {
+    top: 42px;
+    transition: 0.3s ease;
+}
+.v-line01 {
+    transform: translateY(10px) rotate(-45deg);
+    transition: 0.3s ease;
+}
+.v-line02 {
+    transition: 0.3s ease;
+    opacity: 0;
+}
+.v-line03 {
+    transform: translateY(-10px) rotate(45deg);
+    transition: 0.3s ease;
+}
+.menu-enter-active, .menu-leave-active {
+    transition: opacity 0.3s;
+}
+.menu-enter-from, .menu-leave-to {
+    opacity: 0;
+}
+.menu-enter-to, .menu-leave-from {
+    opacity: 1;
+}

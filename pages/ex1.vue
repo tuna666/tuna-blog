@@ -1,56 +1,32 @@
 <template>
   <!-- component -->
-  <div class="max-w-screen-lg mx-auto">
-    <!-- header -->
-    <header class="flex items-center justify-between py-2">
-      <button class="block md:hidden px-2 text-3xl">
-        <i class='bx bx-menu'></i>
-      </button>
-      <ul class="hidden md:inline-flex items-center">
-        <li class="px-2 md:px-4">
-          <a href="" class="text-green-800 font-semibold hover:text-green-600"> Home </a>
-        </li>
-        <li class="px-2 md:px-4">
-          <a href="" class="text-gray-500 font-semibold hover:text-green-600"> About </a>
-        </li>
-        <li class="px-2 md:px-4">
-          <a href="" class="text-gray-500 font-semibold hover:text-green-600"> Press </a>
-        </li>
-        <li class="px-2 md:px-4">
-          <a href="" class="text-gray-500 font-semibold hover:text-green-600"> Contact </a>
-        </li>
-        <li class="px-2 md:px-4 hidden md:block">
-          <a href="" class="text-gray-500 font-semibold hover:text-green-600"> Login </a>
-        </li>
-        <li class="px-2 md:px-4 hidden md:block">
-          <a href="" class="text-gray-500 font-semibold hover:text-green-600"> Register </a>
-        </li>
-      </ul>
-
-    </header>
-    <!-- header ends here -->
-
-    <main class="mt-10">
-
-      <div class="mb-4 md:mb-0 w-full mx-auto relative">
-        <div class="px-4 lg:px-0">
-          <h2 class="text-4xl font-semibold text-gray-800 leading-tight">
-            Pellentesque a consectetur velit, ac molestie ipsum. Donec sodales, massa et auctor.
+  <div class="max-w-screen-sm mx-auto">
+    <main class="">
+      <div class="mb-9 md:mt-6 w-full mx-auto relative">
+        <img src="/sample1.png" class="mb-6 w-full"/>
+        <div class="px-6 lg:px-0">
+          <h2 class="text-2xl font-semibold text-gray-800 leading-tight">
+            太らない炭水化物って？【茶色い炭水化物】
           </h2>
-          <a
-              href="#"
-              class="py-2 text-green-700 inline-flex items-center justify-center mb-2"
-          >
-            Cryptocurrency
+          <a href="#" class="py-2 text-green-700 inline-flex items-center justify-center">
+            #スクール比較
           </a>
         </div>
 
-        <img src="https://images.unsplash.com/photo-1587614387466-0a72ca909e16?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2100&q=80" class="w-full object-cover lg:rounded" style="height: 28em;"/>
+        <div class="flex px-6">
+          <img src="https://randomuser.me/api/portraits/men/97.jpg"
+               class="h-9 w-9 rounded-full mr-2 object-cover" />
+          <div class="px-1">
+            <p class="font-semibold text-gray-700 text-sm"> Mike Sullivan </p>
+            <p class="text-gray-700 text-xs">
+              2021年1月21日 12:00
+            </p>
+          </div>
+        </div>
       </div>
 
-      <div class="flex flex-col lg:flex-row lg:space-x-12">
-
-        <div class="px-4 lg:px-0 mt-12 text-gray-700 text-lg leading-relaxed w-full lg:w-3/4">
+      <div class="flex flex-col">
+        <div class="px-4 lg:px-0 text-gray-700 text-lg leading-relaxed w-full">
           <p class="pb-6">Advantage old had otherwise sincerity dependent additions. It in adapted natural hastily is
             justice. Six draw
             you him full not mean evil. Prepare garrets it expense windows shewing do an. She projection advantages
@@ -113,24 +89,24 @@
 
         </div>
 
-        <div class="w-full lg:w-1/4 m-auto mt-12 max-w-screen-sm">
+        <div class="w-full mx-auto mt-12">
           <div class="p-4 border-t border-b md:border md:rounded">
             <div class="flex py-2">
               <img src="https://randomuser.me/api/portraits/men/97.jpg"
-                   class="h-10 w-10 rounded-full mr-2 object-cover" />
+                   class="h-24 w-24 rounded-full mr-2 object-cover" />
               <div>
-                <p class="font-semibold text-gray-700 text-sm"> Mike Sullivan </p>
-                <p class="font-semibold text-gray-600 text-xs"> Editor </p>
+                <div class="flex items-center justify-between px-3">
+                  <p class="font-semibold text-gray-700 text-xl"> Mike Sullivan </p>
+                  <button class="px-4 py-1 text-gray-100 bg-green-700 flex items-center justify-center rounded">
+                    フォロー
+                  </button>
+                </div>
+                <p class="text-gray-700 p-3">
+                  Mike writes about technology
+                  Yourself required no at thoughts delicate landlord it be. Branched dashwood do is whatever it.
+                </p>
               </div>
             </div>
-            <p class="text-gray-700 py-3">
-              Mike writes about technology
-              Yourself required no at thoughts delicate landlord it be. Branched dashwood do is whatever it.
-            </p>
-            <button class="px-2 py-1 text-gray-100 bg-green-700 flex w-full items-center justify-center rounded">
-              Follow
-              <i class='bx bx-user-plus ml-2' ></i>
-            </button>
           </div>
         </div>
 
@@ -138,50 +114,65 @@
     </main>
     <!-- main ends here -->
 
-    <!-- footer -->
-    <footer class="border-t mt-12 pt-12 pb-32 px-4 lg:px-0">
-      <div>
-        <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2100&q=80" class="h-12 w-12" alt="logo">
+    <!-- 関連記事 -->
+    <div class="pt-6 pb-12 px-4 lg:px-0">
+      <p class="mb-6 font-semibold">
+         こちらもおすすめ
+      </p>
+
+      <div class="grid justify-center grid-cols-1 gap-6 md:grid-cols-2">
+        <a rel="noopener noreferrer" href="#" class="shadow-md rounded-md max-w-sm mx-auto group hover:no-underline focus:no-underline dark:bg-gray-900">
+          <img role="presentation" class="rounded-t-md object-cover w-full h-44 dark:bg-gray-500" src="https://source.unsplash.com/random/480x360?1">
+          <div class="p-6 space-y-2">
+            <h3 class="text-2xl font-semibold group-hover:underline group-focus:underline">In usu laoreet repudiare legendos</h3>
+            <span class="text-xs dark:text-gray-400">January 21, 2021</span>
+            <p>Mei ex aliquid eleifend forensibus, quo ad dicta apeirian neglegentur, ex has tantas percipit perfecto. At per tempor albucius perfecto, ei probatus consulatu patrioque mea, ei vocent delicata indoctum pri.</p>
+          </div>
+        </a>
+        <a rel="noopener noreferrer" href="#" class="shadow-md rounded-md max-w-sm mx-auto group hover:no-underline focus:no-underline dark:bg-gray-900">
+          <img role="presentation" class="rounded-t-md object-cover w-full h-44 dark:bg-gray-500" src="https://source.unsplash.com/random/480x360?2">
+          <div class="p-6 space-y-2">
+            <h3 class="text-2xl font-semibold group-hover:underline group-focus:underline">In usu laoreet repudiare legendos</h3>
+            <span class="text-xs dark:text-gray-400">January 22, 2021</span>
+            <p>Mei ex aliquid eleifend forensibus, quo ad dicta apeirian neglegentur, ex has tantas percipit perfecto. At per tempor albucius perfecto, ei probatus consulatu patrioque mea, ei vocent delicata indoctum pri.</p>
+          </div>
+        </a>
+        <a rel="noopener noreferrer" href="#" class="shadow-md rounded-md max-w-sm mx-auto group hover:no-underline focus:no-underline dark:bg-gray-900">
+          <img role="presentation" class="rounded-t-md object-cover w-full h-44 dark:bg-gray-500" src="https://source.unsplash.com/random/480x360?3">
+          <div class="p-6 space-y-2">
+            <h3 class="text-2xl font-semibold group-hover:underline group-focus:underline">In usu laoreet repudiare legendos</h3>
+            <span class="text-xs dark:text-gray-400">January 23, 2021</span>
+            <p>Mei ex aliquid eleifend forensibus, quo ad dicta apeirian neglegentur, ex has tantas percipit perfecto. At per tempor albucius perfecto, ei probatus consulatu patrioque mea, ei vocent delicata indoctum pri.</p>
+          </div>
+        </a>
+        <a rel="noopener noreferrer" href="#" class="shadow-md rounded-md max-w-sm mx-auto group hover:no-underline focus:no-underline dark:bg-gray-900">
+          <img role="presentation" class="rounded-t-md object-cover w-full h-44 dark:bg-gray-500" src="https://source.unsplash.com/random/480x360?4">
+          <div class="p-6 space-y-2">
+            <h3 class="text-2xl font-semibold group-hover:underline group-focus:underline">In usu laoreet repudiare legendos</h3>
+            <span class="text-xs dark:text-gray-400">January 24, 2021</span>
+            <p>Mei ex aliquid eleifend forensibus, quo ad dicta apeirian neglegentur, ex has tantas percipit perfecto. At per tempor albucius perfecto, ei probatus consulatu patrioque mea, ei vocent delicata indoctum pri.</p>
+          </div>
+        </a>
+        <a rel="noopener noreferrer" href="#" class="shadow-md rounded-md max-w-sm mx-auto group hover:no-underline focus:no-underline dark:bg-gray-900">
+          <img role="presentation" class="rounded-t-md object-cover w-full h-44 dark:bg-gray-500" src="https://source.unsplash.com/random/480x360?5">
+          <div class="p-6 space-y-2">
+            <h3 class="text-2xl font-semibold group-hover:underline group-focus:underline">In usu laoreet repudiare legendos</h3>
+            <span class="text-xs dark:text-gray-400">January 25, 2021</span>
+            <p>Mei ex aliquid eleifend forensibus, quo ad dicta apeirian neglegentur, ex has tantas percipit perfecto. At per tempor albucius perfecto, ei probatus consulatu patrioque mea, ei vocent delicata indoctum pri.</p>
+          </div>
+        </a>
+        <a rel="noopener noreferrer" href="#" class="shadow-md rounded-md max-w-sm mx-auto group hover:no-underline focus:no-underline dark:bg-gray-900">
+          <img role="presentation" class="rounded-t-md object-cover w-full h-44 dark:bg-gray-500" src="https://source.unsplash.com/random/480x360?6">
+          <div class="p-6 space-y-2">
+            <h3 class="text-2xl font-semibold group-hover:underline group-focus:underline">In usu laoreet repudiare legendos</h3>
+            <span class="text-xs dark:text-gray-400">January 26, 2021</span>
+            <p>Mei ex aliquid eleifend forensibus, quo ad dicta apeirian neglegentur, ex has tantas percipit perfecto. At per tempor albucius perfecto, ei probatus consulatu patrioque mea, ei vocent delicata indoctum pri.</p>
+          </div>
+        </a>
       </div>
-      <div class="flex flex-wrap">
-        <div class="w-full lg:w-2/5">
-          <p class="text-gray-600 hidden lg:block mt-4 p-0 lg:pr-12">
-            Boisterous he on understood attachment as entreaties ye devonshire.
-            In mile an form snug were been sell.
-            Extremely ham any his departure for contained curiosity defective.
-            Way now instrument had eat diminution melancholy expression sentiments stimulated.
-          </p>
-        </div>
+    </div>
 
-        <div class="w-full mt-6 lg:mt-0 md:w-1/2 lg:w-1/5">
-          <h6 class="font-semibold text-gray-700 mb-4">Company</h6>
-          <ul>
-            <li> <a href="" class="block text-gray-600 py-2">Team</a> </li>
-            <li> <a href="" class="block text-gray-600 py-2">About us</a> </li>
-            <li> <a href="" class="block text-gray-600 py-2">Press</a> </li>
-          </ul>
-        </div>
-
-        <div class="w-full mt-6 lg:mt-0 md:w-1/2 lg:w-1/5">
-          <h6 class="font-semibold text-gray-700 mb-4">Content</h6>
-          <ul>
-            <li> <a href="" class="block text-gray-600 py-2">Blog</a> </li>
-            <li> <a href="" class="block text-gray-600 py-2">Privacy Policy</a> </li>
-            <li> <a href="" class="block text-gray-600 py-2">Terms & Conditions</a> </li>
-            <li> <a href="" class="block text-gray-600 py-2">Documentation</a> </li>
-          </ul>
-        </div>
-
-        <div class="w-full mt-6 lg:mt-0 md:w-1/2 lg:w-1/5">
-          <h6 class="font-semibold text-gray-700 mb-4">Company</h6>
-          <ul>
-            <li> <a href="" class="block text-gray-600 py-2">Team</a> </li>
-            <li> <a href="" class="block text-gray-600 py-2">About us</a> </li>
-            <li> <a href="" class="block text-gray-600 py-2">Press</a> </li>
-          </ul>
-        </div>
-
-      </div>
-    </footer>
   </div>
 </template>
+<script setup lang="ts">
+</script>
